@@ -7,8 +7,8 @@ node = Node("talker")
 
 
 def cb(request, response):          #変更: 依頼が来るたびに呼ばれる
-    if request.name == "鈴木太郎":   #変更: 依頼（request）のnameを見る
-        response.age = 41           #変更: 返事（response）のageに年齢を入れる
+    if request.name == "澤﨑和也":   #変更: 依頼（request）のnameを見る
+        response.age = 20           #変更: 返事（response）のageに年齢を入れる
     else:
         response.age = 255          #変更: 知らない人なら255
     return response                 #変更: 返事を返す
